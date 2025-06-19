@@ -1,0 +1,132 @@
+/* ===== PREMIUM PROJECTS SECTION STYLES ===== */
+
+/* Projects Section with Premium Background */
+#projects {
+    position: relative;
+    background: radial-gradient(circle at center, rgba(var(--accent-color-rgb), 0.05) 0%, var(--bg-primary) 70%);
+    overflow: hidden;
+    transition: var(--theme-transition);
+}
+
+/* Running Background Effect */
+#projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-image: url('assets/projects/tech-pattern1.svg'), url('assets/projects/code-pattern.svg');
+    background-size: 800px, 600px;
+    background-repeat: repeat-x;
+    background-position: 0 20%, 0 80%;
+    opacity: 0.07;
+    animation: backgroundScroll 60s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Second Layer of Running Background */
+#projects::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-image: url('assets/projects/ai-pattern.svg'), url('assets/projects/tech-pattern2.svg');
+    background-size: 700px, 500px;
+    background-repeat: repeat-x;
+    background-position: 0 30%, 0 70%;
+    opacity: 0.05;
+    animation: backgroundScroll 40s linear infinite reverse;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Animation for the scrolling background */
+@keyframes backgroundScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Enhanced Project Grid */
+.project-grid {
+    position: relative;
+    z-index: 2;
+}
+
+/* Enhanced Project Cards */
+.project-card {
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(var(--accent-color-rgb), 0.2);
+}
+
+/* Project Card Inner with Glassmorphism */
+.project-card-inner {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+    transition: var(--theme-transition);
+}
+
+/* Project Card Front Side */
+.project-card-front {
+    background: transparent;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Project Card Back Side */
+.project-card-back {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: var(--theme-transition);
+    color: var(--text-primary);
+}
+
+/* Project Links with Glow Effect */
+.project-link {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
+}
+
+.project-link:hover i {
+    transform: translateX(3px);
+}
+
+/* Project Tags with Premium Style */
+.project-tags span {
+    background: rgba(var(--accent-color-rgb), 0.1);
+    border: 1px solid rgba(var(--accent-color-rgb), 0.2);
+    box-shadow: 0 0 10px rgba(var(--accent-color-rgb), 0.1);
+    transition: all 0.3s ease, var(--theme-transition);
+    color: var(--accent-color);
+}
+
+.project-tags span:hover {
+    background: rgba(var(--accent-color-rgb), 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(var(--accent-color-rgb), 0.2);
+}

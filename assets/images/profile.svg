@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="600" viewBox="0 0 500 600">
+  <!-- Background -->
+  <rect width="500" height="600" fill="#1a1a1a"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="250" cy="150" r="120" fill="#00d4ff" opacity="0.1"/>
+  <circle cx="250" cy="150" r="100" fill="#1a1a1a"/>
+  
+  <!-- Head -->
+  <circle cx="250" cy="150" r="80" fill="#00d4ff" opacity="0.2"/>
+  <circle cx="250" cy="150" r="75" fill="#1a1a1a"/>
+  <path d="M190 150 Q250 220 310 150" stroke="#00d4ff" stroke-width="2" fill="none" opacity="0.8"/>
+  
+  <!-- Face features -->
+  <circle cx="220" cy="130" r="8" fill="#00d4ff" opacity="0.8"/>
+  <circle cx="280" cy="130" r="8" fill="#00d4ff" opacity="0.8"/>
+  
+  <!-- Hair -->
+  <path d="M170 120 Q250 50 330 120" stroke="#00d4ff" stroke-width="4" fill="none" opacity="0.6"/>
+  <path d="M180 100 Q250 40 320 100" stroke="#00d4ff" stroke-width="3" fill="none" opacity="0.5"/>
+  
+  <!-- Body -->
+  <path d="M190 230 L190 400 Q250 420 310 400 L310 230" fill="#00d4ff" opacity="0.2"/>
+  
+  <!-- Shirt collar -->
+  <path d="M220 250 L250 280 L280 250" stroke="#00d4ff" stroke-width="2" fill="none" opacity="0.8"/>
+  
+  <!-- Tech elements -->
+  <rect x="220" y="300" width="60" height="30" rx="5" fill="#00d4ff" opacity="0.5"/>
+  <circle cx="250" cy="315" r="10" fill="#1a1a1a"/>
+  
+  <!-- Code elements -->
+  <text x="150" y="450" font-family="monospace" font-size="12" fill="#00d4ff" opacity="0.7">&lt;div class="developer"&gt;</text>
+  <text x="170" y="470" font-family="monospace" font-size="12" fill="#00d4ff" opacity="0.7">&lt;code&gt;createAwesome()&lt;/code&gt;</text>
+  <text x="150" y="490" font-family="monospace" font-size="12" fill="#00d4ff" opacity="0.7">&lt;/div&gt;</text>
+  
+  <!-- Decorative circles -->
+  <circle cx="150" cy="350" r="15" fill="#00d4ff" opacity="0.2"/>
+  <circle cx="350" cy="350" r="15" fill="#00d4ff" opacity="0.2"/>
+  <circle cx="150" cy="380" r="10" fill="#00d4ff" opacity="0.15"/>
+  <circle cx="350" cy="380" r="10" fill="#00d4ff" opacity="0.15"/>
+  
+  <!-- Decorative lines -->
+  <line x1="120" y1="200" x2="150" y2="200" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  <line x1="350" y1="200" x2="380" y2="200" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  <line x1="120" y1="220" x2="140" y2="220" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  <line x1="360" y1="220" x2="380" y2="220" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Tech pattern background -->
+  <path d="M50 500 L70 520 L50 540 L30 520 Z" fill="#00d4ff" opacity="0.2"/>
+  <path d="M450 500 L470 520 L450 540 L430 520 Z" fill="#00d4ff" opacity="0.2"/>
+  <path d="M100 550 L120 570 L100 590 L80 570 Z" fill="#00d4ff" opacity="0.2"/>
+  <path d="M400 550 L420 570 L400 590 L380 570 Z" fill="#00d4ff" opacity="0.2"/>
+</svg>

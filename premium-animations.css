@@ -1,0 +1,596 @@
+/* ===== PREMIUM ANIMATIONS AND EFFECTS ===== */
+
+/* Ripple Effect for Buttons and Interactive Elements */
+.ripple-effect {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.ripple-effect .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    animation: ripple-animation 0.8s ease-out;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* Enhanced Loading Screen */
+.premium-loader {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+}
+
+.premium-loader-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--accent-color);
+    animation: premium-spin 1.5s linear infinite;
+}
+
+.premium-loader-circle:nth-child(2) {
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    border-top-color: transparent;
+    border-right-color: var(--accent-color);
+    animation: premium-spin 2s linear infinite reverse;
+}
+
+.premium-loader-circle:nth-child(3) {
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: 30%;
+    border-top-color: transparent;
+    border-bottom-color: var(--accent-color);
+    animation: premium-spin 1s linear infinite;
+}
+
+@keyframes premium-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Percentage Counter */
+.percentage-counter {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin: 10px 0 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: opacity 0.5s ease;
+}
+
+.percentage-counter span {
+    background: linear-gradient(90deg, var(--accent-color), #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.percentage-counter.fade-out {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Portfolio SVG Animation */
+.portfolio-svg-container {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.portfolio-svg-container.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.portfolio-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-path {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: draw-path 2s forwards ease-in-out;
+}
+
+@keyframes draw-path {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.premium-loader-text {
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-top: 10px;
+}
+
+.premium-loader-text::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    animation: loading-bar 2.5s ease-in-out infinite;
+}
+
+@keyframes loading-bar {
+    0% { width: 0; left: 0; }
+    50% { width: 100%; left: 0; }
+    100% { width: 0; left: 100%; }
+}
+
+/* Premium Hover Effects for Cards */
+.hover-float {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-float:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced 3D Flip Card Effect */
+.enhanced-flip-card {
+    perspective: 1500px;
+    transform-style: preserve-3d;
+}
+
+.enhanced-flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.enhanced-flip-card:hover .enhanced-flip-card-inner {
+    transform: rotateY(180deg) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.enhanced-flip-card-front, .enhanced-flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.enhanced-flip-card-front {
+    background-color: var(--deep-black);
+    border: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.enhanced-flip-card-back {
+    background-color: var(--deep-black);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+/* Premium Card Decorations */
+.card-decoration {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.card-decoration.top-right {
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-color), transparent);
+    border-radius: 50%;
+    filter: blur(15px);
+}
+
+.card-decoration.bottom-left {
+    bottom: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, var(--accent-color), transparent);
+    border-radius: 50%;
+    filter: blur(10px);
+}
+
+.enhanced-flip-card:hover .card-decoration {
+    opacity: 0.8;
+    filter: blur(5px);
+}
+
+/* Premium Image Effects */
+.premium-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.premium-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.enhanced-flip-card:hover .premium-img-container img {
+    transform: scale(1.1);
+}
+
+.premium-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.8) 100%);
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+}
+
+.enhanced-flip-card:hover .premium-img-overlay {
+    opacity: 0.4;
+}
+
+/* Premium SVG Decorations */
+.premium-svg-decoration {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    opacity: 0.15;
+    transition: all 0.5s ease;
+}
+
+.premium-svg-decoration.top-left {
+    top: 10px;
+    left: 10px;
+    transform: rotate(-15deg);
+}
+
+.premium-svg-decoration.bottom-right {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(15deg);
+}
+
+.enhanced-flip-card:hover .premium-svg-decoration {
+    opacity: 0.3;
+    transform: rotate(0deg);
+}
+
+/* Glow Effect */
+.glow-effect {
+    position: relative;
+}
+
+.glow-effect::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--accent-color), transparent, var(--accent-color));
+    z-index: -1;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.glow-effect:hover::before {
+    opacity: 1;
+    animation: glow-animation 1.5s linear infinite;
+}
+
+@keyframes glow-animation {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Smooth Page Transitions */
+.page-transition {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Parallax Scrolling Effect */
+.parallax-element {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+}
+
+/* Text Reveal Animation */
+.text-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-reveal span {
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+    animation: text-reveal-animation 0.5s forwards;
+}
+
+@keyframes text-reveal-animation {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Gradient Text Effect */
+.gradient-text {
+    background: linear-gradient(90deg, var(--accent-color), #ff00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-shift 8s linear infinite;
+    background-size: 200% auto;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+/* Liquid Button Effect */
+.liquid-button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.liquid-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%) rotate(35deg);
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+.liquid-button:hover::after {
+    transform: translate(-50%, -50%) rotate(35deg) scale(1.2);
+}
+
+/* 3D Tilt Effect */
+.tilt-effect {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.tilt-inner {
+    transition: transform 0.1s ease-out;
+    transform: rotateX(0) rotateY(0);
+}
+
+/* Scroll Progress Indicator */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent-color);
+    z-index: 9999;
+    transition: width 0.1s ease;
+}
+
+/* Animated Background Gradient */
+.animated-gradient {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Micro-interactions for Form Elements */
+.premium-input {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.premium-input input,
+.premium-input textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.premium-input label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.premium-input input:focus,
+.premium-input textarea:focus,
+.premium-input input:valid,
+.premium-input textarea:valid {
+    border-bottom-color: var(--accent-color);
+    outline: none;
+}
+
+.premium-input input:focus ~ label,
+.premium-input textarea:focus ~ label,
+.premium-input input:valid ~ label,
+.premium-input textarea:valid ~ label {
+    top: -12px;
+    left: 0;
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
+/* Animated Icons */
+.animated-icon {
+    transition: transform 0.3s ease;
+}
+
+.animated-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Pulse Animation */
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Shimmer Effect */
+.shimmer {
+    position: relative;
+    overflow: hidden;
+}
+
+.shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer-animation 2s infinite;
+}
+
+@keyframes shimmer-animation {
+    to { left: 100%; }
+}
+
+/* Responsive Styles for Premium Animations */
+@media (max-width: 992px) {
+    .percentage-counter {
+        font-size: 2rem;
+    }
+    
+    .portfolio-svg-container {
+        width: 250px;
+        height: 80px;
+    }
+    
+    .premium-loader {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .premium-loader-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .percentage-counter {
+        font-size: 1.8rem;
+    }
+    
+    .portfolio-svg-container {
+        width: 200px;
+        height: 70px;
+    }
+    
+    .premium-loader {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .premium-loader-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .percentage-counter {
+        font-size: 1.5rem;
+    }
+    
+    .portfolio-svg-container {
+        width: 180px;
+        height: 60px;
+    }
+    
+    .premium-loader {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .premium-loader-text {
+        font-size: 1rem;
+    }
+}

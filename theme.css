@@ -1,0 +1,210 @@
+/* ===== THEME STYLES ===== */
+
+/* Light Theme Variables */
+:root {
+    /* Default theme is dark */
+    --theme-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark Theme (Default) */
+:root {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --accent-color: #00d4ff;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --card-bg: #1a1a1a;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --input-bg: #1a1a1a;
+    --overlay-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Light Theme */
+:root.light-theme {
+    --bg-primary: #f5f5f5;
+    --bg-secondary: #ffffff;
+    --text-primary: #333333;
+    --text-secondary: rgba(0, 0, 0, 0.7);
+    --accent-color: #0088cc;
+    --border-color: rgba(0, 0, 0, 0.1);
+    --card-bg: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --input-bg: #f0f0f0;
+    --overlay-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Apply theme variables to elements */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: var(--theme-transition);
+}
+
+/* Header and Navigation */
+#navbar {
+    background-color: var(--bg-primary);
+    transition: var(--theme-transition);
+}
+
+#navbar.scrolled {
+    background-color: var(--bg-secondary);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.logo {
+    color: var(--text-primary);
+}
+
+.nav-link {
+    color: var(--text-secondary);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-color);
+}
+
+/* Sections */
+section {
+    background-color: var(--bg-primary);
+}
+
+.section-title {
+    color: var(--text-primary);
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+}
+
+/* Project Cards */
+.project-card-front, .project-card-back {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.project-tags span {
+    background-color: rgba(0, 136, 204, 0.1);
+    color: var(--accent-color);
+}
+
+/* About Section */
+.about-text p {
+    color: var(--text-primary);
+}
+
+.skill-tag {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+/* Contact Section */
+.contact-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.form-group input, .form-group textarea {
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+    touch-action: manipulation; /* Improve touch behavior */
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+.theme-toggle i {
+    font-size: 1.5rem;
+}
+
+/* Responsive styles for theme toggle */
+@media (max-width: 768px) {
+    .theme-toggle {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .theme-toggle i {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .theme-toggle {
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .theme-toggle i {
+        font-size: 1.2rem;
+    }
+}
+
+/* Statistics Section */
+.stat-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.counter, .unit {
+    color: var(--accent-color);
+}
+
+.stat-label {
+    color: var(--text-primary);
+}
+
+/* Animations and Effects */
+.cursor-dot, .cursor-outline {
+    background-color: var(--accent-color);
+}
+
+/* Loading Screen */
+#loading-screen {
+    background-color: var(--bg-primary);
+}
+
+.loader {
+    border-top-color: var(--accent-color);
+}
+
+.loader-text {
+    color: var(--text-primary);
+}

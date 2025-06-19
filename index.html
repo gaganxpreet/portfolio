@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Premium Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="premium-animations.css">
+    <link rel="stylesheet" href="about-premium.css">
+    <link rel="stylesheet" href="statistics-premium.css">
+    <link rel="stylesheet" href="theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css for additional animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Premium Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-container">
+            <div class="loader"></div>
+            <div class="loader-text">Loading<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
+        </div>
+    </div>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <header id="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#statistics" class="nav-link">Statistics</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="typewriter"></h1>
+                <p class="subtitle">Frontend Developer & UI/UX Designer</p>
+                
+                <!-- Hero Stats with Running Numbers -->
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-value">
+                            <span class="counter" data-target="42">0</span><span class="hero-stat-symbol">+</span>
+                        </div>
+                        <div class="hero-stat-label">Projects Completed</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-value">
+                            <span class="counter" data-target="35">0</span><span class="hero-stat-symbol">+</span>
+                        </div>
+                        <div class="hero-stat-label">Happy Clients</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-value">
+                            <span class="counter" data-target="5">0</span><span class="hero-stat-symbol">+</span>
+                        </div>
+                        <div class="hero-stat-label">Years Experience</div>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div id="particles-js"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="section-subtitle">Recent work I've created</div>
+            
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <!-- Front Side -->
+                        <div class="project-card-front">
+                            <div class="project-img">
+                                <img src="assets/projects/project1.jpg" alt="E-Commerce Website">
+                            </div>
+                            <div class="project-content">
+                                <h3>E-Commerce Website</h3>
+                                <div class="project-tags">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Back Side -->
+                        <div class="project-card-back">
+                            <div class="project-description">
+                                <p>A full-featured e-commerce platform with user authentication, product management, shopping cart, and payment integration.</p>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <!-- Front Side -->
+                        <div class="project-card-front">
+                            <div class="project-img">
+                                <img src="assets/projects/project2.svg" alt="Portfolio Dashboard">
+                            </div>
+                            <div class="project-content">
+                                <h3>Portfolio Dashboard</h3>
+                                <div class="project-tags">
+                                    <span>Vue.js</span>
+                                    <span>D3.js</span>
+                                    <span>Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Back Side -->
+                        <div class="project-card-back">
+                            <div class="project-description">
+                                <p>An interactive dashboard for tracking investments and portfolio performance with real-time data visualization and customizable metrics.</p>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <!-- Front Side -->
+                        <div class="project-card-front">
+                            <div class="project-img">
+                                <img src="assets/projects/project3.svg" alt="AI Content Generator">
+                            </div>
+                            <div class="project-content">
+                                <h3>AI Content Generator</h3>
+                                <div class="project-tags">
+                                    <span>Python</span>
+                                    <span>TensorFlow</span>
+                                    <span>Flask</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Back Side -->
+                        <div class="project-card-back">
+                            <div class="project-description">
+                                <p>A tool that leverages machine learning to generate high-quality content with customizable tone settings and multi-language support.</p>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <!-- Front Side -->
+                        <div class="project-card-front">
+                            <div class="project-img">
+                                <img src="assets/projects/project4.svg" alt="Mobile Fitness App">
+                            </div>
+                            <div class="project-content">
+                                <h3>Mobile Fitness App</h3>
+                                <div class="project-tags">
+                                    <span>React Native</span>
+                                    <span>Firebase</span>
+                                    <span>Redux</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Back Side -->
+                        <div class="project-card-back">
+                            <div class="project-description">
+                                <p>A comprehensive fitness application with workout tracking, nutrition planning, progress analytics, and social features for workout sharing.</p>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="page-transition">
+        <div id="statistics-scroll-progress"></div>
+        <div class="premium-svg-decoration top-right">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200' fill='none'%3E%3Cpath d='M20 20L40 40M60 20L80 40M100 20L120 40M140 20L160 40M180 20L200 40M20 60L40 80M60 60L80 80M100 60L120 80M140 60L160 80M180 60L200 80M20 100L40 120M60 100L80 120M100 100L120 120M140 100L160 120M180 100L200 120M20 140L40 160M60 140L80 160M100 140L120 160M140 140L160 160M180 140L200 160M20 180L40 200M60 180L80 200M100 180L120 200M140 180L160 200M180 180L200 200' stroke='rgba(0, 212, 255, 0.2)' stroke-width='2'/%3E%3C/svg%3E" alt="Tech Grid">
+        </div>
+        <div class="container">
+            <h2 class="section-title text-reveal">
+                <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+                <span>S</span><span>t</span><span>a</span><span>t</span><span>i</span><span>s</span><span>t</span><span>i</span><span>c</span><span>s</span>
+            </h2>
+            <div class="section-subtitle gradient-text">Key performance metrics and achievements</div>
+            
+            <div class="stats-container">
+                <div class="statistics-grid">
+                    <!-- Stat Card 1 -->
+                    <div class="stat-card hover-float tilt-effect">
+                        <div class="svg-decoration top-right client-satisfaction parallax" data-depth="0.2"></div>
+                        <div class="svg-decoration bottom-left client-satisfaction parallax" data-depth="-0.1"></div>
+                        <div class="tilt-inner">
+                            <div class="stat-label">Client Satisfaction Rate</div>
+                            <div class="counter-container">
+                                <span class="counter glow-pulse" data-target="98">0</span>
+                                <span class="unit">%</span>
+                            </div>
+                            <div class="trend-indicator trend-up">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>12% from 2022</span>
+                            </div>
+                            <div class="previous-years">
+                                <div class="year-data">
+                                    <span class="year-label">2023</span>
+                                    <span class="year-value">98%</span>
+                                </div>
+                                <div class="year-data">
+                                    <span class="year-label">2022</span>
+                                    <span class="year-value">87%</span>
+                                </div>
+                                <div class="year-data">
+                                    <span class="year-label">2021</span>
+                                    <span class="year-value">82%</span>
+                                </div>
+                                <div class="year-data">
+                                    <span class="year-label">2020</span>
+                                    <span class="year-value">78%</span>
+                                </div>
+                            </div>
+                            <a href="#testimonials" class="cta-link ripple-effect">
+                                <span>See client testimonials</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat Card 2 -->
+                    <div class="stat-card hover-float tilt-effect">
+                        <div class="svg-decoration top-right project-completion parallax" data-depth="0.2"></div>
+                        <div class="svg-decoration bottom-left project-completion parallax" data-depth="-0.1"></div>
+                        <div class="tilt-inner">
+                            <div class="stat-label">Project Completion Rate</div>
+                            <div class="counter-container">
+                                <span class="counter glow-pulse" data-target="95">0</span>
+                                <span class="unit">%</span>
+                            </div>
+                            <div class="trend-indicator trend-up">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>7% from 2022</span>
+                            </div>
+                            <div class="previous-years">
+                                <div class="year-data">
+                                    <span class="year-label">2023</span>
+                                    <span class="year-value">95%</span>
+                                </div>
+                                <div class="year-data">
+                                    <span class="year-label">2022</span>
+                                    <span class="year-value">88%</span>
+                                </div>
+                                <div class="year-data">
+                                    <span class="year-label">2021</span>
+                                    <span class="year-value">84%</span>
+                                </div>
+                                <div class="year-data">
+                                    <span class="year-label">2020</span>
+                                    <span class="year-value">79%</span>
+                                </div>
+                            </div>
+                            <a href="#" class="cta-link ripple-effect">
+                                <i class="fas fa-download"></i>
+                                <span>Download portfolio</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat Card 3 -->
+                    <div class="stat-card hover-float tilt-effect">
+                        <div class="svg-decoration top-right project-turnaround parallax" data-depth="0.2"></div>
+                        <div class="svg-decoration bottom-left project-turnaround parallax" data-depth="-0.1"></div>
+                        <div class="tilt-inner">
+                            <div class="stat-label">Average Project Turnaround</div>
+                            <div class="counter-container">
+                                <span class="counter glow-pulse" data-target="14">0</span>
+                                <span class="unit">days</span>
+                            </div>
+                            <div class="trend-indicator trend-down">
+                                <i class="fas fa-arrow-down"></i>
+                                <span>30% from 2022</span>
+                            </div>
+                            <div class="previous-years">
+                                <div class="year-data">
+                                    <span class="year-label">2023</span>
+                                    <span class="year-value">14 days</span>
+                                </div>
+                                <div class="year-data">
+                                    <span class="year-label">2022</span>
+                                    <span class="year-value">20 days</span>
+                                </div>
+                                <div class="year-data">
+                                    <span class="year-label">2021</span>
+                                    <span class="year-value">24 days</span>
+                                </div>
+                                <div class="year-data">
+                                    <span class="year-label">2020</span>
+                                    <span class="year-value">28 days</span>
+                                </div>
+                            </div>
+                            <a href="#timeline" class="cta-link ripple-effect">
+                                <i class="fas fa-arrow-right"></i>
+                                <span>View project timeline</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="premium-svg-decoration bottom-left">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200' fill='none'%3E%3Ccircle cx='100' cy='100' r='80' stroke='rgba(0, 212, 255, 0.2)' stroke-width='2' stroke-dasharray='10 5'/%3E%3Ccircle cx='100' cy='100' r='60' stroke='rgba(0, 212, 255, 0.15)' stroke-width='2' stroke-dasharray='8 4'/%3E%3Ccircle cx='100' cy='100' r='40' stroke='rgba(0, 212, 255, 0.1)' stroke-width='2' stroke-dasharray='6 3'/%3E%3Ccircle cx='100' cy='100' r='20' stroke='rgba(0, 212, 255, 0.05)' stroke-width='2' stroke-dasharray='4 2'/%3E%3C/svg%3E" alt="Circles Pattern">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="page-section page-transition">
+        <!-- Floating Shapes for Visual Interest -->
+        <div class="floating-shape circle" data-depth="0.03"></div>
+        <div class="floating-shape square" data-depth="0.05"></div>
+        <div class="floating-shape triangle" data-depth="0.07"></div>
+        <div class="floating-shape plus" data-depth="0.04"></div>
+        <div class="floating-shape dots" data-depth="0.02"></div>
+        
+        <div class="about-container">
+            <div id="about-scroll-progress" class="scroll-progress-indicator">
+                <div class="scroll-progress-bar"></div>
+            </div>
+            <h2 class="section-title text-reveal">About <span class="gradient-text">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="tilt-effect">I'm a passionate <strong>full-stack developer</strong> with over 5 years of experience building web applications that combine beautiful design with efficient functionality.</p>
+                    <p class="tilt-effect">My journey in tech began with a Computer Science degree, but my love for creating digital experiences has led me through roles at startups, agencies, and enterprise companies.</p>
+                    <p class="tilt-effect">I believe in writing clean, maintainable code and staying on top of emerging technologies to deliver the best solutions for my clients.</p>
+                </div>
+                <div class="about-image-container hover-float tilt-effect">
+                    <img src="assets/images/profile.svg" alt="Developer Profile Picture">
+                    <div class="image-decoration top-right parallax" data-depth="0.2"></div>
+                    <div class="image-decoration bottom-left parallax" data-depth="-0.1"></div>
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+            <div class="skills-section">
+                <h3 class="text-reveal">My <span class="gradient-text">Skills</span></h3>
+                <div class="skills-container">
+                    <div class="skill-tag-wrapper">
+                        <span class="skill-tag ripple-effect">JavaScript</span>
+                    </div>
+                    <div class="skill-tag-wrapper">
+                        <span class="skill-tag ripple-effect">React</span>
+                    </div>
+                    <div class="skill-tag-wrapper">
+                        <span class="skill-tag ripple-effect">Node.js</span>
+                    </div>
+                    <div class="skill-tag-wrapper">
+                        <span class="skill-tag ripple-effect">HTML5</span>
+                    </div>
+                    <div class="skill-tag-wrapper">
+                        <span class="skill-tag ripple-effect">CSS3</span>
+                    </div>
+                    <div class="skill-tag-wrapper">
+                        <span class="skill-tag ripple-effect">TypeScript</span>
+                    </div>
+                    <div class="skill-tag-wrapper">
+                        <span class="skill-tag ripple-effect">Python</span>
+                    </div>
+                    <div class="skill-tag-wrapper">
+                        <span class="skill-tag ripple-effect">Git</span>
+                    </div>
+                    <div class="skill-tag-wrapper">
+                        <span class="skill-tag ripple-effect">UI/UX Design</span>
+                    </div>
+                    <div class="skill-tag-wrapper">
+                        <span class="skill-tag ripple-effect">Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-shapes">
+                <div class="shape shape-1 parallax" data-depth="0.1"></div>
+                <div class="shape shape-2 parallax" data-depth="-0.2"></div>
+                <div class="shape shape-3 parallax" data-depth="0.15"></div>
+                <div class="shape shape-4 parallax" data-depth="-0.15"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-subtitle">Let's work together</div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <div class="form-highlight"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <div class="form-highlight"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                            <div class="form-highlight"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                            <div class="form-highlight"></div>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Portfolio</div>
+                <div class="footer-text">&copy; 2024 All Rights Reserved</div>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#statistics">Statistics</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+<script src="premium-features.js"></script>
+
+<!-- Particles.js for background effects -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!-- GSAP for advanced animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+<script>
+    // Initialize GSAP animations
+    gsap.registerPlugin(ScrollTrigger);
+    
+    // Animate hero section on load
+    gsap.from('#hero .hero-content', {
+        duration: 1.2,
+        y: 100,
+        opacity: 0,
+        ease: 'power3.out',
+        delay: 0.5
+    });
+    
+    // Animate project cards on scroll
+    gsap.utils.toArray('.project-card').forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: 'top bottom-=100',
+                toggleActions: 'play none none none'
+            },
+            y: 100,
+            opacity: 0,
+            duration: 0.8,
+            delay: i * 0.1
+        });
+    });
+</script>
+</body>
+</html>

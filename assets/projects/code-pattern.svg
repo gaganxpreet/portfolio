@@ -1,0 +1,30 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Code Pattern -->
+  <defs>
+    <linearGradient id="codeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Grid -->
+  <path d="M0,50 L200,50 M0,100 L200,100 M0,150 L200,150" stroke="#00d4ff" stroke-width="0.3" opacity="0.2"/>
+  
+  <!-- Code Brackets -->
+  <path d="M40,30 L20,100 L40,170" stroke="#00d4ff" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M160,30 L180,100 L160,170" stroke="#00d4ff" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Code Lines -->
+  <path d="M60,60 L140,60" stroke="#00d4ff" stroke-width="2" opacity="0.7"/>
+  <path d="M70,80 L130,80" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  <path d="M60,100 L140,100" stroke="#00d4ff" stroke-width="2" opacity="0.7"/>
+  <path d="M70,120 L130,120" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  <path d="M60,140 L140,140" stroke="#00d4ff" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="40" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Function Symbols -->
+  <path d="M90,40 L110,40 L110,45 L100,55 L90,45 Z" fill="#00d4ff" opacity="0.6"/>
+  <path d="M90,160 L110,160 L110,155 L100,145 L90,155 Z" fill="#00d4ff" opacity="0.6"/>
+</svg>
